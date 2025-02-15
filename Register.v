@@ -6,6 +6,7 @@ module Register(CLK, RegW, DR, SR1, SR2, Reg_In, ReadReg1, ReadReg2);
     output reg [31:0] ReadReg1, ReadReg2;
     reg [31:0] REG [0:31];
     integer i;
+    
     initial begin
         ReadReg1 = 0;
         ReadReg2 = 0;
@@ -13,6 +14,7 @@ module Register(CLK, RegW, DR, SR1, SR2, Reg_In, ReadReg1, ReadReg2);
             REG[i] = 0;
         end
     end
+    
     always @(posedge CLK) begin
         if(RegW == 1'b1)
         REG[DR] <= Reg_In[31:0];
