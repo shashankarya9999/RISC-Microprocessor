@@ -1,6 +1,3 @@
-# RISC-Microprocessor
+# RISC Microprocessor
 
-A 32-bit RISC Microprocessor with an implementation of the MIPS ISA. 
-
-
-<!--The arithmetic, memory access, and control transfer instructions of the MIPS are presented along with a design to implement a subset of the ISA. 
+In this project, I described a microprocessor from MIPS Technologies, the MIPS R2000, and the implement a subset of the MIPS processor's instruction set architecture(ISA).
