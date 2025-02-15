@@ -1,4 +1,5 @@
 module mips_testbench;
+    
     reg CLK;
     wire CS, WE;
 
@@ -53,9 +54,9 @@ module mips_testbench;
             @(posedge WE); // When a store word is executed
             @(negedge CLK);
             if (Mem_Bus_Wire != expected[i])
-            $display("Output mismatch: got %d, expect %d", Mem_Bus_Wire,
-                        expected[i]);
+                $display("Output mismatch: got %d, expect %d", Mem_Bus_Wire, expected[i]);
         end
+        
         $display("Testing Finished:");
         $finish;
     end
